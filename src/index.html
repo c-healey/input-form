@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css"/>
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+  </head>
+  <body>
+  <div class="container">
+    <div class="section-2-col">
+
+    
+    <div class="col col-1">
+     <h1>Learn to code by watching others</h1> 
+  <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+    but understanding how developers think is invaluable. </p>
+    
+    </div>
+    <div class="col col-2">
+     <button class="btn btn--blue">
+       <span class-"bold"></span>Try it free 7 days</span> then $20/mo. thereafter
+     </button>
+     <div class="form card" novalidate>
+    
+      <div class="form__group">
+        <input type="text" class="form__input" id="first-name" placeholder="First Name" required>
+        <label for="first-name" class="form__label">First Name</label>
+        <div class="side-by-side errorfname hide"><span class="error">Enter your first name.</span><img src="../images/icon-error.svg" alt="" class="icon-error"></div>
+      </div>
+      <div class="form__group">
+        <input type="text" class="form__input" id="last-name" placeholder="Last Name" required>
+        <label for="last-name" class="form__label">Last Name</label>
+        <div class="side-by-side errorlname hide"><span class="error">Enter your last name.</span><img src="../images/icon-error.svg" alt="" class="icon-error"></div>
+      </div>
+      <div class="form__group">
+        <input type="email" class="form__input" id="email" placeholder="Email Address" required>
+        <label for="email" class="form__label">Email Address</label>
+        <div class="side-by-side erroremail hide"><span class="error">Enter a valid email address.</span><img src="../images/icon-error.svg" alt="" class="icon-error"></div>
+      </div>
+      <div class="form__group">
+        <input type="password" class="form__input" id="password" placeholder="Password" required 
+        pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+         title="Password:UpperCase, LowerCase, Number OR SpecialChar and min 8 Chars ">
+        <label for="password" class="form__label">Password</label>
+        <div class="side-by-side errorpassword hide"><span class="error">Enter a valid password.</span><img src="../images/icon-error.svg" alt="" class="icon-error"></div>
+
+      </div>
+        
+       
+        <input type="submit" class="btn btn--primary btn-signup" value=" Claim your free trial"/>
+        
+        <p class="disclaimer">By clicking the button, you are agreeing to our <a href="." ><span class="red">Terms and Services</span></a></p>
+     </div></div>
+    </div>
+  
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+  </div>
+    
+    
+    
+  </body>
+  </html>
